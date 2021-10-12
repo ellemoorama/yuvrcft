@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+/* Inicio */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(242, 230, 230);
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo{
+    height: 100px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+    padding-left: 50px;
+}
+
+/*Menu*/
+
+.menu-navegacion{
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.enlaces ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlaces a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    padding: 12px 20px;
+    transition: all ease 0.35s;
+    display: block;
+}
+
+.enlaces a:hover{
+    color: #636363;
+}
+
+.enlaces ul li ul{
+    display: flex;
+    flex-direction: column;
+    border: #000 1px solid;
+    border-radius: 5px;
+}
+
+.enlaces ul li ul{
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+.enlaces ul li ul li{
+    width: 180px;
+    position: relative;
+}
+
+.enlaces ul li ul li ul{
+    position: absolute;
+    top: -1px;
+    left: 180px;
+}
+
+.enlaces ul li:hover > ul{
+    display: block;
+}
+
+
+/*Hero*/
+
+.hero{
+    height: 500px;
+    background-color: rgb(255, 207, 206);
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedorP{
+    cursor: default;
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*caja1*/
+.contenedor1{
+    margin-right: 2%;
+    width: 40%;
+    height: 54%;
+    background-color: rgb(183, 232, 223, 0.8);
+}
+
+.contenedor1 h3{
+    font-size: 30px;
+    font-family: 'Charm', cursive;
+    margin-top: 7px;
+}
+
+.contenedor1 p{
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+/*caja2*/
+.contenedor2{
+    margin-left: 2%;
+    width: 40%;
+    height: 54%;
+    background-color: rgb(183, 232, 223, 0.8);
+}
+
+.contenedor2 h3{
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.contenedor2 p{
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+/*Contenido_cards*/
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 9%;
+    overflow: hidden;
+}
+
+.container h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container h3{
+    margin-left: 20px;
+}
+
+.ropa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card{
+    width: 100%;
+    margin: 0 40px 40px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.card img{
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 200px;
+    width: 100%;
+    max-width: min-content;
+    object-fit: cover;
+}
+
+.card .contenedor{
+    margin-top: 10px;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.card .contenedor h2{
+    font-size: 16px;
+}
+
+.card .contenedor h4{
+    font-size: 16px;
+    margin-left: 12%;
+}
+
+.precio h4{
+    font-size: 16px;
+    margin-left: 12%;
+}
+
+/* Registro */
+
+
+.registro{
+    padding: 8% 31%;
+    background-attachment: fixed;
+    background-image: url(../images/fondoRegistro.jpeg);
+    background-position: center;
+}
+
+.registro .contenedor{
+    align-items: center;
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: rgb(175, 26, 63);
+}
+
+.contenedor h2{
+    font-size: 20px;
+    margin-left: 12%;
+}
+
+.contenedor h1{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 12%;
+}
+
+.controlC{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgb(223, 150, 150);
+    margin-left: 12%;
+}
+
+.botonC{
+    width: 95%;
+    padding: 7px;
+    background-color: rgb(228, 85, 83);
+    color: rgba(244, 237, 237);
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(145, 55, 55);
+    margin-bottom: 50px;
+    margin-left: 12%;
+}
+
+
+/* Estilos */
+
+.estilos{
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url(../images/fondoRegistro.jpeg);
+    background-position: center;
+}
+
+.estilos .contenedor{
+    display: flex;
+    width: 100%;
+    margin: 7% 0%;
+    padding: 0 5%;
+}
+
+.subirImg{
+    background-color: #fff;
+    width: 40%;
+    margin: 0 3%;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: rgb(175, 26, 63);
+}
+
+.subirImg img{
+    width: 180px;
+    background-color: rgb(110, 110, 110);
+    padding: 7%;
+    margin: 20% 25%;
+}
+.subirImg .addImg{
+    margin-left:22%;
+    margin-bottom: 20px;
+}
+
+.formularioE{
+    width: 30%;
+    background-color: #fff;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-color: rgb(175, 26, 63);
+    padding: 5%;
+}
+
+.contenedor h2{
+    font-size: 20px;
+}
+
+.contenedor h1{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.categ{
+    margin-left: 12%;
+}
+
+.talla{
+    margin-left: 12%;
+}
+
+.estiloRopa{
+    margin-left: 12%;
+}
+
+.controlC{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgb(223, 150, 150);
+}
+
+.letras{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgb(223, 150, 150);
+    margin-left: 12%;
+}
+
+.colores{
+    margin-left: 12%;
+}
+
+.botonC{
+    width: 75%;
+    padding: 7px;
+    background-color: rgb(228, 85, 83);
+    color: rgba(244, 237, 237);
+    margin-top: 15px;
+    border: none;
+    border: 1px solid rgb(145, 55, 55);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#file{
+    display: none;
+}
+
+.subArch{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    color: rgba(244, 237, 237);
+    background-color: rgb(228, 85, 83);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botonC:hover{
+    transition: all ease .4s;
+    background-color: rgb(145, 55, 55);
+}
+
+.subArch:hover{
+    transition: all ease .4s;
+    background-color: rgb(145, 55, 55);
+}
+
+
+
+/* Catalogo */
+
+.hero2{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 207, 206);
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor3{
+    margin-right: 50%;
+    width: 40%;
+    height: 52%;
+    background-color: rgb(183, 232, 223, 0.8);
+}
+
+.contenedor3 h3{
+    font-size: 40px;
+    margin-top: 12%;
+}
+
+.contenedor3 p{
+    font-size: 16px;
+    margin-bottom: 10%;
+    line-height: 20px;
+}
+
+
+
+
+.hero3{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 207, 206);
+    background-image: url("../images/hero3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor4{
+    margin-left: 50%;
+    width: 40%;
+    height: 52%;
+    background-color: rgb(183, 232, 223, 0.8);
+}
+
+.contenedor4 h3{
+    font-size: 40px;
+    margin-top: 12%;
+}
+
+.contenedor4 p{
+    font-size: 16px;
+    margin-bottom: 10%;
+    line-height: 20px;
+}
+
+
+
+.hero4{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 207, 206);
+    background-image: url("../images/hero4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor5{
+    width: 40%;
+    height: 52%;
+    background-color: rgb(183, 232, 223, 0.8);
+}
+
+.contenedor5 h3{
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.contenedor5 p{
+    font-size: 16px;
+    margin-bottom: 10%;
+    line-height: 20px;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: rgb(183, 232, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+footer p{
+    font-size: 14px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
